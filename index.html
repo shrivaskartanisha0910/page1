@@ -42,7 +42,12 @@
         var icon = document.getElementById("icon");
         mysong.volume = 0.2;
         icon.onclick = function(){
-            mysong.play();          
+            if(mysong.paused){
+            mysong.play(); 
+          }
+          else{
+            mysong.pause();
+          }        
         }
       </script>
       <section id="REGIS">
